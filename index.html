@@ -15,39 +15,50 @@
     <!-- navbar -->
     <nav class="flex h-16 bg-black bg-opacity-80 items-center justify-around border-b border-white fixed inset-0 z-10">
         <div class="logosize">
-            <img src="assets/img/logo.png" alt="aztm">
+            <a href="#"><img src="assets/img/logo.png" alt="aztm"></a>
         </div>
 
-        <div class="px-3 py-3 bg-red-600 rounded text-white home1font hover:bg-red-800">contact us</div>
+        <div>
+            <a class="px-2 py-2 bg-red-600 rounded text-white home1font hover:bg-red-800 outline-none" href="#contact"
+                onclick=myClicker()>Contact us</a>
+        </div>
 
     </nav>
-    <div>
-        <!-- start home1 -->
-        <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 min-h-screen min-w-full items-center">
-            <div class="lg:order-1 order-2 mb-52 lg:mb-0 md:mb-0">
-                <div class="text-white text-center lg:text-5xl md:text-4xl text-3xl home1font animate__animated animate__fadeInLeftBig">
-                    <span class="border-blue-300 border-b-2 border-r-4 p-2 hover:text-red-600">AZTM MOVIE STORE</span>
-                </div>
-                <div
-                    class="text-white text-center home1font mt-5 text-lg animate__animated animate__fadeInLeft animate__delay-1s">
-                    <p class="m-1">We are the best movie store in Myanmar</p>
-                </div>
-                <div class="text-center mt-1">
-                    <button
-                        class="px-3 py-3 bg-red-600 text-white home1font text-center rounded-lg  hover:bg-red-800 animate__animated animate__fadeInDown animate__delay-2s" type="button">
-                        Watch Now
-                    </button>
-                </div>
+    <!-- home1 section -->
+    <section class="bgbody grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 min-h-screen min-w-full items-center">
+        <div class="lg:order-1 order-2 mb-52 lg:mb-0 md:mb-0">
+            <div
+                class="text-white text-center lg:text-5xl md:text-4xl text-3xl home1font animate__animated animate__fadeInLeftBig">
+                <span class="border-blue-300 border-b-2 border-r-4 p-2 hover:text-red-600">AZTM MOVIE STORE</span>
             </div>
-            <div class="px-20 lg:p-3 md:p-3 text-center sm:order-1 mt-24 lg:mt-0 md:mt-0">
-                <img src="assets/img/laptop.png" alt="laptop">
+            <div
+                class="text-white text-center home1font mt-5 text-lg animate__animated animate__fadeInLeft animate__delay-1s">
+                <p class="m-2">We are the best movie store in Myanmar</p>
+            </div>
+            <div class="text-center mt-2">
+                <button
+                    class="px-3 py-3 bg-red-600 text-white home1font text-center rounded-lg  hover:bg-red-800 animate__animated animate__fadeInDown animate__delay-2s ring-2 ring-red-900"
+                    type="button">
+                    Watch Now
+                </button>
             </div>
         </div>
-        <!-- done home1 -->
-    </div>
-    <img src="assets/img/bg.jpg" alt="">
-    <img src="assets/img/bg.jpg" alt="">
+        <div class="px-20 lg:p-3 md:p-3 text-center sm:order-1 mt-24 lg:mt-0 md:mt-0">
+            <img src="assets/img/laptop.png" alt="laptop">
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h1 class="text-4xl text-white">this is contact</h1>
+    </section>
 
 </body>
+<script>
+    let mycontact = document.querySelector(".contact");
+    const myClicker = () => {
+        mycontact.classList.toggle("active");
+    }
+</script>
 
 </html>
