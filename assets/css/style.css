@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body{
     background-image: url('/assets/img/bg.jpg');
     background-attachment: fixed;
@@ -5,7 +6,17 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+*{
+    scroll-behavior: smooth;
+}
+/* header{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform : translate3d(0, 0, 0);
+} */
 .logosize{
     width: 95px;
     height: auto;
+}
+.home1font{
+    font-family: 'Poppins', sans-serif;
 }
